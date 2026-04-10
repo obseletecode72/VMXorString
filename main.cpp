@@ -32,6 +32,7 @@ void checkw(bool cond, int id, const wchar_t* result) {
     std::wcout.flush();
 }
 
+// if you dont want to global strings in memory, then define it using auto, if you define it using const char* will stay in memory
 auto g_global1 = XORSTR("GlobalString");
 auto g_global2 = XORSTR("AnotherGlobal");
 auto g_globalW1 = XWOSTR(L"WideGlobal");
